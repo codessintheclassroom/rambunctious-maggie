@@ -14,7 +14,7 @@ class InquiryModal extends Component<Props> {
     return (
       <Modal {...this.props} show={this.props.show} centered>
         <Modal.Header closeButton>
-          <Modal.Title>I am to adopt {this.props.pet.name}!</Modal.Title>
+          <Modal.Title>I want to adopt {this.props.pet.name}!</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
