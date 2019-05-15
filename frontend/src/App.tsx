@@ -3,6 +3,7 @@ import './App.css';
 import PetCard from './PetCard';
 import { Container, Row, CardColumns, Col } from 'react-bootstrap';
 import Pet from './Pet';
+import { Jumbotron } from 'react-bootstrap';
 
 const App: React.FC = () => {
   const [pets, setPets] = useState<Array<Pet>>([]);
@@ -17,9 +18,14 @@ const App: React.FC = () => {
 
     updatePets();
   }, []);
+  
 
   return (
     <Container>
+      <Jumbotron>
+        <h1>Welcome!</h1>
+        <p>Have a look at the animals that are currently looking for a lovely home! </p>
+      </Jumbotron>
       <Row>
         <Col>
           <CardColumns>
