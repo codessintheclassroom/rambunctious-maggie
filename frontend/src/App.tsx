@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { CardColumns, Col, Container, Jumbotron, Row } from 'react-bootstrap';
 import './App.css';
-import PetCard from './PetCard';
-import { Container, Row, CardColumns, Col } from 'react-bootstrap';
 import Pet from './Pet';
-import { Jumbotron } from 'react-bootstrap';
+import PetCard from './PetCard';
 
 const App: React.FC = () => {
   const [pets, setPets] = useState<Array<Pet>>([]);
@@ -18,7 +17,7 @@ const App: React.FC = () => {
 
     updatePets();
   }, []);
-  
+
 
   return (
     <Container>
